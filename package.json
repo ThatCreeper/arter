@@ -1,0 +1,19 @@
+{
+  "name": "arter",
+  "version": "1.0.0",
+  "description": "A program for managing art",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "htasd"
+  },
+  "author": "ThatCreeper",
+  "license": "ISC",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.0",
+    "electron": "^7.1.7"
+  }
+}
