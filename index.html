@@ -52,17 +52,20 @@
 			padding-left: 5%;
 		}
 		.panel {
+            display: inline-block;
 			width: 200px;
 			height: 300px;
 			background-color: #09627d;
 			box-shadow: 5px 5px 5px #000000AA;
 			text-align: center;
+            margin-right: 20px;
 		}
 		.panel-img {
 			height: 150px;
 			width: 200px;
 		}
     </style>
+    <link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
     <div id="addnew">Add New Painting</div>
@@ -70,7 +73,9 @@
     	<div class="panel">
     		<img class="panel-img" src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"/>
     		<h4 style="color:white;">Painting 1</h4>
-    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color:white;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+    		<i class="fas fa-edit" style="font-size:30px; color:white;"></i>
+    		<div style="width:75px;display:inline-block;"></div>
+    		<i class="fas fa-trash" style="font-size:30px; color:white;"></i>
     	</div>
     </div>
     <div id="overlay"></div>
