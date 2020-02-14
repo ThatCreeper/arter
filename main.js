@@ -64,8 +64,10 @@ function deletePainting(id) {
 
 function submitForm() {
 	var object = {};
+	if(editing) oldObject = remote.getGlobal('data').paintings[id]
 	new FormData(document.getElementById('myform')).forEach((value, key) => {object[key] = value});
 	if(!editing) object.imageLoc = object.image.path
+	if(editing) object.imageLoc = oldObject.imageLoc
 	var remote_data = remote.getGlobal('data').paintings
 	if(editing) {
 		remote_data[id] = object
