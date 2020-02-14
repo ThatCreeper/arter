@@ -74,7 +74,7 @@ function createWindow () {
   })
   mainWindow.loadFile('index.html')
   mainWindow.show()
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
   //mainWindow.setTitle('Arter')
   mainWindow.on('closed', function () {
     mainWindow = null
@@ -104,7 +104,7 @@ function openFile(){
     }
   )
   //alert(openPath)
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
   console.log(openPath)
   if (openPath == undefined) return;
   var data = fs.readFileSync(openPath[0],{encoding:"utf8"});
